@@ -1,18 +1,15 @@
 .auth-container {
   display: flex;
   justify-content: space-around;
-  border: 1px solid red;
   padding: 20px;
 }
 
 .auth-banner-container {
   display: none;
-  border: 1px solid orange;
 }
 
 .auth-form-container {
   width: 100%;
-  border: 1px solid blue;
 }
 
 @media (min-width: 576px) {
@@ -52,7 +49,6 @@
 
   .auth-banner-container svg {
     width: 100%;
-    border: 1px solid green;
   }
 }
 @media (min-width: 1200px) {
