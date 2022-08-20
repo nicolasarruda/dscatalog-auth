@@ -2,12 +2,13 @@ import Navbar from './Navbar';
 
 import './styles.css';
 import { Route, Switch } from 'react-router-dom';
+import Users from './User';
 
 const Admin = () => {
   return (
     <div className="admin-container">
-        <Navbar />
-        <div className="admin-content">
+      <Navbar />
+      <div className="admin-content">
         <Switch>
           <Route path="/admin/products">
             <h1>Product CRUD</h1>
@@ -16,10 +17,10 @@ const Admin = () => {
             <h1>Category CRUD</h1>
           </Route>
           <Route path="/admin/users">
-            <h1>User CRUD</h1>
+            <Users />
           </Route>
         </Switch>
-        </div>
+      </div>
     </div>
   );
 };
