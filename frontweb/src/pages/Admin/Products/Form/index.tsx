@@ -29,13 +29,12 @@ const Form = () => {
       withCredentials: true,
     };
 
-    requestBackend(config).then((response) => {
-      console.log(response.data);
+    requestBackend(config).then(() => {
+      history.push('/admin/products');
     });
   };
 
-  const handleCancel = (event: React.MouseEvent) => {
-    event.preventDefault();
+  const handleCancel = () => {
     history.push('/admin/products');
   };
 
